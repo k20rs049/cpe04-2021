@@ -107,5 +107,10 @@ button{
         font-size: 30px;
         position:absolute; top:450px; left:190px; width:80px; height:40px;   
     }
+    #disp1{
+      font-size: 15px;
+      position:top; top:500px; left:500px; width:1000px; height:40px;   
+      text-align: justify;
+    }
     
     input[type=number] {text-align: right;}

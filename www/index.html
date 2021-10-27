@@ -24,6 +24,7 @@
 
     // ready クリックの処理の登録
     $(function() {
+
       $('#date').click(function(e) {
         setDebugMode(e);
       });
@@ -218,6 +219,11 @@
       startTime = new Date();
     }
 
+    function main(){
+      $("#disp1").html(msg);
+      msg = "っっs";
+    }
+
     // 繰り返し実行する処理
     function timer() {
       if (active) {
@@ -240,6 +246,12 @@
 
   <div id="minuteStr">〇</div>
   <div id="secondStr">○</div>
+
+  <div id="disp1" class="out">〜らーめんたいまーとは〜<br>
+  このボタンを押すだけで<br>
+  ３分のタイマーをセット<br>
+  して実行してくれるボタ<br>
+  ンのことである</div>
 
   <div id="remain">Remaining time</div>
   <div id="time">Time</div>
