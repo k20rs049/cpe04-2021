@@ -16,13 +16,18 @@ button{
 }
 
 #remain{
+  box-shadow: 5px 5px 5px;
+  width: 50%;
   font-weight: bold;
+  background: white;
+  margin: 0 auto;
 }
 
 #time{
   box-shadow: 5px 5px 5px;
   width: 50%;
   margin: 0 auto;
+  background: white
 }
 
 #time::after{
