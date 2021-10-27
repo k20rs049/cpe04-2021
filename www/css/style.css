@@ -5,15 +5,13 @@ body{
 }
 
 button{
-  color: blue;
+  color: white;
   font-family: Times;
   border-radius: 20px;
+  
 }
 
-#btnA{
-  color: green;
-  background-color: yellow;
-}
+
 
 #remain{
   box-shadow: 5px 5px 5px;
