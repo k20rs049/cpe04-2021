@@ -227,9 +227,9 @@
       var canvas2 = $("#mycanvas2")[0];
       var ctx2 = canvas2.getContext("2d");
       var img2 = new Image();
-      img2.src = "cup_noodle.jpg";
+      img2.src = "ramen.jpg";
       img2.onload = function() {
-      ctx2.drawImage(img2, -150, -50, 800, 700);
+      ctx2.drawImage(img2, 0, 0, 400, 650);
       };
       
     }
@@ -255,7 +255,7 @@
 
 <body>
   <canvas id="mycanvas" width="200" height="200">Test</canvas>
-  <canvas id="mycanvas2" width="375" height="650">Test</canvas>
+  <canvas id="mycanvas2" width="375" height="600">Test</canvas>
 
   
 
