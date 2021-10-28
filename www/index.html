@@ -185,7 +185,6 @@
       var audio = new Audio();
       audio.src = "pin.wav";
       audio.play();
-
     }
 
     // ButtonAがクリックされた時の処理
@@ -217,12 +216,18 @@
       period = 180;
       active = true;
       startTime = new Date();
+
+      var canvas2 = $("#mycanvas2")[0];
+      var ctx2 = canvas2.getContext("2d");
+      var img2 = new Image();
+      img2.src = "cup_noodle.png";
+      img2.onload = function() {
+        ctx2.drawImage(img2, -100, -30, 700, 700);
+      };
+      
     }
 
-    function main(){
-      $("#disp1").html(msg);
-      msg = "っっs";
-    }
+    
 
     // 繰り返し実行する処理
     function timer() {
@@ -243,6 +248,7 @@
 
 <body>
   <canvas id="mycanvas" width="200" height="200">Test</canvas>
+  <canvas id="mycanvas2" width="800" height="800">Test</canvas>
 
   <div id="minuteStr">〇</div>
   <div id="secondStr">○</div>
@@ -252,7 +258,7 @@
   ３分のタイマーをセット<br>
   して実行してくれるボタ<br>
   ンのことである</div>
-
+  
   <div id="remain">Remaining time</div>
   <div id="time">Time</div>
   <button id="btnA">Start</button>

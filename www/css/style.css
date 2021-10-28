@@ -1,7 +1,7 @@
 /**/
 
 body{
-  background-color: skyblue
+  background-color: skyblue;
 }
 
 button{
@@ -109,8 +109,7 @@ button{
     }
     #disp1{
       font-size: 15px;
-      position:top; top:500px; left:500px; width:1000px; height:40px;   
-      text-align: justify;
+      position:top; top:500px; left:0px; width:1000px; height:40px;
     }
     
     input[type=number] {text-align: right;}
