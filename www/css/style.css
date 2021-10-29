@@ -44,16 +44,17 @@ button{
 
     #minuteStr {
         color: #ff0000;
-        font-size: 20px;
+        font-size: 1px;
         text-align: left;
         position:absolute; top:210px; 
         left:10px; right:10px;
+        font-family: Georgia, 'Times New Roman', Times, serif
     }
     
     #secondStr {
         color: #ff0000;
         font-size: 10px;
-        text-align: left;
+        text-align: start;
         position:absolute; top:250px; 
         left:10px; right:10px;
     }
